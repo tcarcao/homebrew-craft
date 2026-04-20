@@ -11,7 +11,7 @@ class CraftCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tcarcao/craft/releases/download/v2.1.0/craft_2.1.0_darwin_amd64.tar.gz"
-      sha256 "da6329708dff4e6c90c8f869c178b9114412855ae5e972887f172b9859020bab"
+      sha256 "23395a87f2c9ff346e51ab9e37218d09d472d4e62c6cb7b5a665798897fd4f8e"
 
       define_method(:install) do
         bin.install "craft-cli"
@@ -19,7 +19,7 @@ class CraftCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tcarcao/craft/releases/download/v2.1.0/craft_2.1.0_darwin_arm64.tar.gz"
-      sha256 "6d0f02249e524002bcaa56eb8b8339c968d741f783942cd69b77e4ec4fb6ffc6"
+      sha256 "dd13a3b305e711f021ae70d324d5f49d7cc6d66917f2c5b954e954344aa2facb"
 
       define_method(:install) do
         bin.install "craft-cli"
@@ -30,14 +30,14 @@ class CraftCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tcarcao/craft/releases/download/v2.1.0/craft_2.1.0_linux_amd64.tar.gz"
-      sha256 "2b655682bb80f3022b48d83e9de5837cdb4fadaa243426ad5ab3b1f745f51b3a"
+      sha256 "1312f961e430a7f6547c1d2e8472b532fb0c5be3d5ea74e1b79a2f1bb452440f"
       define_method(:install) do
         bin.install "craft-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tcarcao/craft/releases/download/v2.1.0/craft_2.1.0_linux_arm64.tar.gz"
-      sha256 "0498bb0a4c65db569e0048bfabf0b448c09cafba724fdd5ad00b77cd9132763c"
+      sha256 "f228c088897f670e3c49079bc89e76b98c10ddae5d83c15a3cf75e567d932f5e"
       define_method(:install) do
         bin.install "craft-cli"
       end
