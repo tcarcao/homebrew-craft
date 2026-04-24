@@ -6,5 +6,5 @@ Homebrew tap for [Craft](https://github.com/tcarcao/craft) — a DDD modeling CL
 
 ```bash
 brew tap tcarcao/craft
-brew install craft-cli
+brew install craft
 ```
