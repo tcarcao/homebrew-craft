@@ -5,21 +5,21 @@
 class Craft < Formula
   desc "DDD modeling CLI with language server — parse, lint, inspect, visualize, and edit .craft files"
   homepage "https://github.com/tcarcao/craft"
-  version "2.5.1"
+  version "2.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tcarcao/craft/releases/download/v2.5.1/craft_2.5.1_darwin_amd64.tar.gz"
-      sha256 "cd48213901c8e5b8312c3228d37aecf8153e491f5745f92c6a5ee590b8655a25"
+      url "https://github.com/tcarcao/craft/releases/download/v2.5.2/craft_2.5.2_darwin_amd64.tar.gz"
+      sha256 "6753c2c0b77396e30cddd9a0cd9cb1a97f9961686a3adbed9b9340a2c2ebca78"
 
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tcarcao/craft/releases/download/v2.5.1/craft_2.5.1_darwin_arm64.tar.gz"
-      sha256 "7ab9392d2ff7e61c8eee31711b815204164e9144ccc323999cbcdf0a3964165f"
+      url "https://github.com/tcarcao/craft/releases/download/v2.5.2/craft_2.5.2_darwin_arm64.tar.gz"
+      sha256 "f90e7e4fbd95b50703f1f7a8ccbde7acb2e67c1785c87a8ba196c32c64e90a96"
 
       define_method(:install) do
         bin.install "craft"
@@ -29,15 +29,15 @@ class Craft < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcarcao/craft/releases/download/v2.5.1/craft_2.5.1_linux_amd64.tar.gz"
-      sha256 "ad708102bc1b202a26c5a76b1b47b659ce17b2a8296eb4411ae89a523b82e9ea"
+      url "https://github.com/tcarcao/craft/releases/download/v2.5.2/craft_2.5.2_linux_amd64.tar.gz"
+      sha256 "ccff4478d4a68cc109f6c4dcca1ac5b08774fb9d25db8faa0e1aea10055b93fd"
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcarcao/craft/releases/download/v2.5.1/craft_2.5.1_linux_arm64.tar.gz"
-      sha256 "d121dcfb96637cb14b8b6987983efc82defaff6e90413ace6c720c8415dc8a2c"
+      url "https://github.com/tcarcao/craft/releases/download/v2.5.2/craft_2.5.2_linux_arm64.tar.gz"
+      sha256 "96a9756ff54c187f6267dc7e55fb14654f71752d0655bbed4267f0133ea4fa11"
       define_method(:install) do
         bin.install "craft"
       end
