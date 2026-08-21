@@ -5,21 +5,21 @@
 class Craft < Formula
   desc "DDD modeling CLI with language server — parse, lint, inspect, visualize, and edit .craft files"
   homepage "https://github.com/tcarcao/craft"
-  version "2.18.0"
+  version "2.19.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tcarcao/craft/releases/download/v2.18.0/craft_2.18.0_darwin_amd64.tar.gz"
-      sha256 "e43b899b9832a2374486d229cf2b5b1b1f00e9d21f8d6ba9e72ba6ca9f8423ca"
+      url "https://github.com/tcarcao/craft/releases/download/v2.19.0/craft_2.19.0_darwin_amd64.tar.gz"
+      sha256 "bb9af10967183ae52e45edae02e425339dcb6a93a56a7e2e98f34a258360d72c"
 
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tcarcao/craft/releases/download/v2.18.0/craft_2.18.0_darwin_arm64.tar.gz"
-      sha256 "6c77967d2033f48feb027c7c110b0dd7a68915eb4f4b673e780abf1bb7cad4b9"
+      url "https://github.com/tcarcao/craft/releases/download/v2.19.0/craft_2.19.0_darwin_arm64.tar.gz"
+      sha256 "4851ba05c6cc02277a28b10123d2d6ac9bdfcef60fc9c2e385b75cf71282fadb"
 
       define_method(:install) do
         bin.install "craft"
@@ -29,15 +29,15 @@ class Craft < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcarcao/craft/releases/download/v2.18.0/craft_2.18.0_linux_amd64.tar.gz"
-      sha256 "1573aeede29a982becbc341af488556bb211eb41579ca9ffdb6082785d517b60"
+      url "https://github.com/tcarcao/craft/releases/download/v2.19.0/craft_2.19.0_linux_amd64.tar.gz"
+      sha256 "501e91476daca1508faeead36324affc10c0291a1640a40df9ab847041fa8f42"
       define_method(:install) do
         bin.install "craft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tcarcao/craft/releases/download/v2.18.0/craft_2.18.0_linux_arm64.tar.gz"
-      sha256 "a23ba7b6403563583afb047c78df9f7fa405660d8ff008bf635dccf873331866"
+      url "https://github.com/tcarcao/craft/releases/download/v2.19.0/craft_2.19.0_linux_arm64.tar.gz"
+      sha256 "c94e5867938cb4a2d679ccefc1bb3a7ab7045aa0334b16d55c52a087163670b3"
       define_method(:install) do
         bin.install "craft"
       end
